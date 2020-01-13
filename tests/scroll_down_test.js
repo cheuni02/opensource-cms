@@ -4,7 +4,8 @@ module.exports = {
         const basepage = browser.page.basePage();
 
         basepage
-            .navigate();
+            .navigate()
+            .waitForElementVisible('@menuScrollDown');
     }
     
     

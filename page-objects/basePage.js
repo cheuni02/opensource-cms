@@ -1,10 +1,17 @@
+const commands = {
+    scrollDown: function(){
+        menuScrollDown.click();
+    } 
+};
+
 module.exports = {
     url: 'https://s1.demo.opensourcecms.com/wordpress/',
+    commands: [ commands ],
     elements: {
 
         menuScrollDown: {
-            selector: 'menu-scroll-down',
-            locateStrategy: 'css locator'
+            selector: '.menu-scroll-down',
+            locateStrategy: 'css selector'
         },
 
         searchInput: {
