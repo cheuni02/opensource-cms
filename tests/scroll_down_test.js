@@ -5,7 +5,8 @@ module.exports = {
 
         basepage
             .navigate()
-            .waitForElementVisible('@menuScrollDown');
+            .waitForElementVisible('@menuScrollDown')
+            .scrollDown();
     }
     
     
